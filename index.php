@@ -25,9 +25,9 @@ require_once __DIR__ . '/includes/navbar.php';
 
         $(document).on("click", ".add", function(){
             var id = $(this).attr("id");
-            var name = $("#name"+id+"").val();
-            var price = $("#price"+id+"").val();
-            var quantity = $("#quantity"+id+"").val();
+            var name = $("#name").val();
+            var price = $("#price").val();
+            var quantity = $("#quantity").val();
 
             $.ajax({
                 method: "POST",
