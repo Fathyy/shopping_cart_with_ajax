@@ -4,10 +4,7 @@ require_once __DIR__ . '/includes/navbar.php';
 ?>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 show_cart">
-
-        </div>
+    <div class="row show_cart">
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -31,6 +28,7 @@ require_once __DIR__ . '/includes/navbar.php';
             var name = $("#name"+id+"").val();
             var price = $("#price"+id+"").val();
             var quantity = $("#quantity"+id+"").val();
+
             $.ajax({
                 method: "POST",
                 url: "add_to_cart.php",

@@ -1,0 +1,9 @@
+/* col-md-3 styles */
+.col-md-3{
+    margin: 2rem 0;
+    border: 1px solid grey;
+    border-radius: 1rem;
+}
+img{
+    width: 100%;
+}
